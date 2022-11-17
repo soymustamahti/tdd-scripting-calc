@@ -42,4 +42,8 @@ describe('calculator', () => {
         const calculator = new Calculator()
         expect(calculator.convertToRoman(139)).to.equal('CXXXIX')
     })
+    it('give number and should return correct one, 1 should return I', () => {
+        const calculator = new Calculator()
+        expect(calculator.convertToRoman(1)).to.equal('I')
+    })
 })
